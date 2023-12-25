@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+   
+</head>
+<body>
+ <div class="container p-5 d-flex flex-column align-items-center justify-content-center">
+  <div class="header my-4">
+    <h1 class="text-center position-relative">Bookmarker</h1>
+  </div>
+ <div class="form w-100">
+ <div class="content d-flex justify-content-center align-items-center my-4">
+   <i class="fa-solid fa-bookmark icon"></i><h2>Bookmark your favorite sites </h2><i class="fa-solid fa-bookmark"></i>
+ </div>
+ <div class="container">
+   <div class="py-3">
+     <label for="SiteNameInput" class="my-1"><i class="fa-solid fa-book-bookmark pe-2 "></i> Site Name:</label>
+     <input type="" name="" id="SiteNameInput" placeholder="Bookmark Name" class="form-control">
+   </div>
+   <div>
+     <label for="SiteUrlInput"class="my-1"><i class="fa-solid fa-link pe-2"></i> Site Url:</label>
+     <input type="text" name="" id="SiteUrlInput"placeholder="Website Url" class="form-control">
+   </div>
+   <button onclick="addSite()" type="submit" class="btn btn-danger  px-5 my-4 d-flex align-items-center justify-content-center m-auto" id="btnsubmit">submit</button>
+  </div>
+  </div>
+    
+
+   <table class="table my-4 text-center table-light">
+   <thead class="">
+    <tr>
+      <th>Index</th>
+      <th>Website Name</th>
+      <th>Visit</th>
+      <th>Delete</th>
+    </tr>
+   </thead>
+    <tbody id="tablebody">
+       
+    </tbody>
+   </table>
+ </div>
+
+
+
+  
+  <script src="index.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

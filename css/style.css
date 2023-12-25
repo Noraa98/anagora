@@ -1,0 +1,48 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #F0E6D8;
+}
+
+
+.header h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+.header h1:hover::before {
+    height: 50%;
+}
+.header h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+}
+.form{
+    
+        border-width: 2px 0 2px 0;
+        border-style: dotted;
+        border-color: #352e28;
+}
+.line{
+    height: 1px;
+    border-bottom: 1px dotted;
+    
+}
+.content{
+color:gray
+}
+.content h2,.content i{
+        font-family: "Righteous", cursive;
+        font-size: 25px;
+        background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
